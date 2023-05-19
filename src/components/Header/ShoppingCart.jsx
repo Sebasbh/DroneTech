@@ -1,9 +1,7 @@
 import React from 'react'
-
-const ShoppingCart = () => {
+import { Link } from 'react-router-dom'
+export function ShoppingCart() {
   return (
-    <div>ShoppingCart</div>
+    <Link to={"/cart"}><h2>🛒</h2></Link>
   )
 }
-
-export default ShoppingCart

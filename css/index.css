@@ -1,0 +1,342 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Fira Code', monospace;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap%27');
+
+.container{
+width: 100%;
+max-height: 100vh;
+height: auto;
+display: grid;
+grid-template-areas:
+  "header header header header header"
+  "baner baner baner baner baner"
+  "filtro filtro filtro filtro filtro"
+  "container container container container container"
+  "footer footer footer footer footer";
+}
+
+
+
+/**************** HEADER **************/
+.header {
+grid-area:header;
+display: flex;
+justify-content: center;
+justify-content: space-between;
+flex-direction: row;
+align-items: center;
+padding: 02rem;
+gap: 10px;
+}
+
+
+/*********** Diseño menu lateral **********/
+.material-symbols-outlined{
+   cursor: pointer;
+}
+
+.sideNav{
+   height: 100%;
+   position: fixed;
+   top: 0;
+   left: 0%;
+   background-color:#9ba8ac;
+   overflow-x: hidden;
+   transition: 0.3s ease-in;
+   padding-top: 60px;
+   display: none;
+   font-family: 'Fira Code', monospace;
+
+}
+
+.sideNav a {
+   padding: 8px 8px 8px 40px;
+   display: block;
+   font-size: 25px;
+   color:#181818;
+   transition: 0.3s;
+   text-decoration: none;
+}
+
+.sideNav a:hover{
+   color:white ;
+}
+
+.closeBtn{
+   position: absolute;
+   top: 10px;
+   right: 25px;
+   font-size: 20px;
+   margin-left: 50px;
+
+}
+
+/**** logo ****/
+.logo{
+align-items: center;
+display: flex;
+}
+
+.logo1 {
+max-width: 5rem;
+
+}
+
+.logo2 {
+max-width: 15rem;
+min-width: 10rem;
+max-height: 5rem;
+min-height: 2rem;
+}
+
+/******** BANER **********/
+.baner{
+grid-area:baner;
+
+}
+
+.baner img {
+width: 100%;
+height: auto;
+object-fit: cover;
+}
+
+/******** FOOTER **********/
+
+/* DEFINIR MI NUEVO FOOTER*/
+.footer-container {
+   grid-area: footer;
+   display: grid;
+   grid-template-areas: 
+   "nombre-web nombre-web nombre-web"
+   "contacto horario informacion"
+   "ayuda ayuda redes-sociales"
+   "copyright copyright copyright";
+   gap:20px;
+   padding:50px;
+   background-color:#f8f8f8;
+   color:#333;
+   font-size:14px ;
+  text-align: center;
+  align-items:center;
+  font-family: 'Fira Code', monospace;
+  margin-top: 20px;
+  
+  
+ }
+ .nombre-web {
+  grid-area: nombre-web;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ .nombre-web img {
+   max-height: 100%;
+   margin-right: 30px;
+ }
+ .contacto ul {
+   grid-area:contacto;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+ }
+ .contacto li {
+   grid-area:contacto;
+   margin-bottom: 5px;
+  }
+ .informacion {
+  grid-area: informacion;
+   margin: 0;
+   padding: 0;
+   margin-bottom:5px;
+ }
+.informacion ul{
+   list-style: none;
+}
+.informacion h3{
+margin: 10px;
+}
+ 
+ .ayuda ul {
+  grid-area:ayuda ;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ .ayuda li {
+   margin-bottom: 5px;
+  }
+ 
+
+   
+ /* Estilo para las redes sociales */
+ .redes-sociales a { 
+   display: inline-block;
+   margin-right: 10px;
+
+ }
+ 
+ .redes-sociales img {
+   max-height: 30px;
+   max-width: 100%;
+ }
+.redes-sociales{
+   grid-area: redes-sociales;
+   justify-content: space-around;
+}
+
+ 
+ /* Estilo para los títulos de las secciones */
+ .footer-container h3 {
+   margin: 0;
+   font-size: 18px;
+   font-weight: bold;
+   margin-bottom: 10px;
+   display: grid;
+ }
+   .nombre-web {
+     text-align: center;
+     margin-bottom: 20px;
+   }
+ 
+   .redes-sociales {
+     text-align: center;
+   }
+   .copyright{
+      grid-area: copyright;
+
+   }
+ 
+
+/* SIMBOLOS DE MATERIAL */
+.material-symbols-outlined {
+   font-variation-settings:
+   'FILL' 0,
+   'wght' 400,
+   'GRAD' 0,
+   'opsz' 40
+}
+
+ /******** MEDIA QUERY **********/
+
+
+
+  /******** MEDIA QUERY PARA MOBIL **********/
+
+
+@media only screen and (max-width: 450px){
+
+   /* Header */
+   .logo1 {
+      max-width: 3rem;
+   }
+   .logo2 {
+      max-width: 5rem;
+      max-height: 3rem;
+   }
+   .menubtn{
+      font-size: 17px;
+      display: flex;
+      
+   } 
+   .material-symbols-outlined{
+      font-size: 20px;
+   }
+
+   /* Filtro */
+   .modal-content {
+      width: 320px;
+      height: 420px;
+   }
+   .modal h2, .modal h3 {
+      margin: 5px 10px;
+      line-height: 10px;
+   }
+   .modal h2{
+      font-size: 20px;
+   }
+   .modal h3{
+      font-size: 15px;
+   }
+   label{
+      font-size: 15px;
+      margin-bottom: 10px;
+   }
+   hr{
+      margin: 10px 10px;
+      width: 250px;
+   }
+
+   /* COUNT PRODUCTS*/
+   .count_products{
+      right: -7px;
+      width: 15px;
+      height: 15px;
+   }
+.card {
+  display: inline-block;
+  height: 730px;
+}
+
+   .footer-container {
+      grid-template-areas: 
+      "nombre-web"
+      "redes-sociales"
+      "copyright";
+      grid-template-columns: 1fr;
+      text-align: center;
+      }
+      .contacto{
+      display:none;
+      }
+
+      .horario{
+         display:none;
+      }
+      .informacion{
+         display:none;
+      }
+      .ayuda{
+         display:none;
+      }
+      .redes-sociales h3{
+         display: none;
+      }
+      .nombre-web .logo1{
+         width: 100px;
+         height: 100px;
+         margin-right: 0;
+      }
+      .nombre-web .logo2{
+         width: 200px;
+         height: 50px;
+
+      }
+}
+
+@media only screen and (max-width: 380px){
+   .material-symbols-outlined{
+      font-size: 16px;
+   }
+   .logo1 {
+      max-width: 2rem;
+   }
+   .logo2 {
+      max-width: 4rem;
+      max-height: 2rem;
+   }
+
+   /* COUNT PRODUCTS*/
+   .count_products{
+      right: -7px;
+      width: 15px;
+      height: 15px;
+   }
+
+}

@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const Search = () => {
+export const Search = () => {
   return (
-    <div>Search</div>
+  <Link className="H3" to={"/search/"}><h2>😈</h2></Link>
   )
 }
 
-export default Search
+
