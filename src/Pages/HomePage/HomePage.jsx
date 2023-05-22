@@ -7,7 +7,7 @@ import { CardGrid } from '../../components/Main/CardGrid'
 
 export function HomePage() {
   return (
-    <>HomePage
+    <>
    <Header/>
    <CardGrid />
    </>
