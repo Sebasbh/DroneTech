@@ -1,9 +1,21 @@
-import { Link } from "react-router-dom"
+
+import { useContext } from "react"
+import { getDron } from "../../Context/UserProvider"
 
 
 export function Main() {
+const{ data }=useContext(getDron)
+return data.map((dron)=> {
   return (
-    <Link className="H3" to={"/imagen/"}><h2>❤️</h2></Link>
+    
+  <div>
+      <CardGrid />
+   </div>
+     //<Link to="/imagen"><img src={dron.image} alt="" /></Link>
+    //<Link className="H3" to={"/imagen/"}><h2>❤️</h2></Link>
     
   )
-}
+})
+};
+
+

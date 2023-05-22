@@ -1,4 +1,5 @@
 .h3{
-    font-size: 180px;
+    font-size: 80px;
     color: rgb(255, 153, 0);
+    display: flex;
 }
