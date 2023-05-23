@@ -9,7 +9,7 @@ import axios from 'axios';
  export  function UserProvider({children}) {
     
     const [data, setData] = useState([]);
-    useEffect(()=>{
+    useEffect(() => {
         axios("data.json").then((res)=>setData(res.data))
 
     },[])

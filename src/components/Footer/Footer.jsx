@@ -1,9 +1,11 @@
 import React from 'react'
+import { FooterMui } from './FooterMui'
 
-function Footer() {
+export function Footer() {
   return (
-    <div>Footer</div>
+    <div>
+      <FooterMui />
+    </div>
+
   )
 }
-
-export default Footer
