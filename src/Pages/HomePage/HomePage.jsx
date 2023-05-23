@@ -8,7 +8,7 @@ import { Footer} from '../../components/Footer/Footer'
 
 export function HomePage () {
   return (
-    <>HomePage
+    <>
    <Header/>
    <CardGrid />
    <Footer />
