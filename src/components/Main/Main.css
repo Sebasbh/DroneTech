@@ -5,4 +5,29 @@
   gap: 40px;
   grid-template-columns:repeat(auto-fill,300px);
   margin-left: 8em;
+  margin-bottom: 40px;
+  
 }
+
+button:hover{
+  color:#FF4000
+}
+.buton:hover{
+  color:#000000
+}
+
+.MuiButtonBase-root{
+  color:#000000
+}
+
+.css-et1ao3-MuiTypography-root {
+  margin: 0;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 800;
+  font-size: 1.875rem;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  display: block;
+}
+
+

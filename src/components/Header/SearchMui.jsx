@@ -9,7 +9,19 @@ import InputBase from '@mui/material/InputBase';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import { Link } from 'react-router-dom';
-import { ShoppingCart } from './ShoppingCart';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+
+
+
+
+
+
+
+
 
 
 const Search = styled('div')(({ theme }) => ({
@@ -21,6 +33,7 @@ const Search = styled('div')(({ theme }) => ({
   },
   marginLeft: 0,
   width: '100%',
+  boxShadow: '0 1px 1px rgba(0, 0, 0, 0.1)', // Agregar sombra
   [theme.breakpoints.up('sm')]: {
     marginLeft: theme.spacing(1),
     width: 'auto',
@@ -54,29 +67,41 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
+
+
 export function SearchMui() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static" sx={{ backgroundColor: '#FF4000', color: '#white','&:hover': {
+       
+
+        },}}>
         <Toolbar>
           <IconButton
             size="large"
             edge="start"
-            color="inherit"
+          
+            //color="inherit"
             aria-label="open drawer"
             sx={{ mr: 2 }}
           >
-            <MenuIcon />
+            <MenuIcon className="classestoolbar"  />
           </IconButton>
           <Typography
             variant="h6"
             noWrap
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            sx={{
+              flexGrow: 1,
+              display: { xs: 'none', sm: 'block' },
+              display: 'flex',
+              alignItems: 'center',
+            }}
           >
-            DRONES LOGO
+            <img src="/assets/Fotos/icon_dron.png" alt="Logo" style={{ width: '40px', height: 'auto', marginRight: '10px', color: '#white'}} />
+            <span style={{ fontFamily: 'Roboto', fontSize: '24px', fontWeight: '300' }}>DroneTech</span>
           </Typography>
-          <ShoppingCart />
+          <AddShoppingCartIcon />
           <Search>
             <SearchIconWrapper>
               <SearchIcon />
@@ -85,6 +110,7 @@ export function SearchMui() {
               <StyledInputBase
                 placeholder="Buscar"
                 inputProps={{ 'aria-label': 'search' }}
+                sx={{ color: 'black' }}
               />
             </Link>
           </Search>
