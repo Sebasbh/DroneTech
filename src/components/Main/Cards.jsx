@@ -66,7 +66,7 @@ export function Cards() {
         }, }} >            
           <CardHeader
            
-            title={dron.name} sx={{ maxWidth: 345,bgcolor: "#2587e9",font: 500}}
+            title={dron.name} sx={{ maxWidth: 345,fontWeigh: 500}}
            
             
             avatar={
