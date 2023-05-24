@@ -15,14 +15,7 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
-
-
-
-
-
-
-
-
+import Menu from './Menu';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -67,25 +60,29 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-
-
 export function SearchMui() {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleMenuOpen = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleMenuClose = () => {
+    setAnchorEl(null);
+  };
+
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{ backgroundColor: '#FF4000', color: '#white','&:hover': {
-       
-
-        },}}>
+      <AppBar position="static" sx={{ backgroundColor: '#FF4000', color: '#white' }}>
         <Toolbar>
           <IconButton
             size="large"
             edge="start"
-          
-            //color="inherit"
             aria-label="open drawer"
             sx={{ mr: 2 }}
+            onClick={handleMenuOpen}
           >
-            <MenuIcon className="classestoolbar"  />
+            <MenuIcon className="classestoolbar" />
           </IconButton>
           <Typography
             variant="h6"
@@ -93,15 +90,14 @@ export function SearchMui() {
             component="div"
             sx={{
               flexGrow: 1,
-              display: { xs: 'none', sm: 'block' },
-              display: 'flex',
+              display: { xs: 'none', sm: 'block', default: 'flex' },
               alignItems: 'center',
-            }}
+            }}            
           >
             <img src="/assets/Fotos/icon_dron.png" alt="Logo" style={{ width: '40px', height: 'auto', marginRight: '10px', color: '#white'}} />
             <span style={{ fontFamily: 'Roboto', fontSize: '24px', fontWeight: '300' }}>DroneTech</span>
-          </Typography>         
-            <AddShoppingCartIcon />
+          </Typography>
+          <AddShoppingCartIcon />
           <Search>
             <SearchIconWrapper>
               <SearchIcon />
@@ -116,6 +112,7 @@ export function SearchMui() {
           </Search>
         </Toolbar>
       </AppBar>
+      <Menu anchorEl={anchorEl} handleClose={handleMenuClose} />
     </Box>
   );
 }
