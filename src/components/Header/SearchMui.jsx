@@ -100,8 +100,8 @@ export function SearchMui() {
           >
             <img src="/assets/Fotos/icon_dron.png" alt="Logo" style={{ width: '40px', height: 'auto', marginRight: '10px', color: '#white'}} />
             <span style={{ fontFamily: 'Roboto', fontSize: '24px', fontWeight: '300' }}>DroneTech</span>
-          </Typography>
-          <AddShoppingCartIcon />
+          </Typography>         
+            <AddShoppingCartIcon />
           <Search>
             <SearchIconWrapper>
               <SearchIcon />
