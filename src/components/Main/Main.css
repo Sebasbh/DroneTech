@@ -108,3 +108,8 @@ button:hover{
   transition: 0.5s ease-in-out;
 
 }
+
+.buybutton button{
+  border: none;
+  text-decoration: none;
+}

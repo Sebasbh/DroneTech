@@ -7,7 +7,7 @@ import axios from 'axios';
  export const getDron = createContext();
 
  export  function UserProvider({children}) {
-    
+    const [cart, setCart] = useState([]);
     const [data, setData] = useState([]);
     useEffect(() => {
         axios("data.json").then((res)=>setData(res.data))
@@ -16,8 +16,10 @@ import axios from 'axios';
 
 
   return (
-  <getDron.Provider value={{data}}>{children}</getDron.Provider>
+  <getDron.Provider value={{data, cart, setCart}}>{children}</getDron.Provider>
    
   )
 }
+
+
 

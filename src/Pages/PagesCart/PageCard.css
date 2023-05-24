@@ -1,5 +1,30 @@
-.h3{
-    font-size: 80px;
-    color: rgb(255, 153, 0);
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
     display: flex;
-}
+    flex-direction: column;
+  }
+  
+  .main-container {
+    flex: 1;
+    position: relative;
+  
+  }
+  
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .prueba{
+   height: 800px;
+  }
+  
+  
+  
+  
