@@ -1,9 +1,13 @@
 import React from 'react'
+import { MenuMui } from './MenuMui'
+import "./Menu.css"
 
-const Menu = () => {
+export function Menu() {
   return (
-    <div>Menu</div>
+    <div>
+      <MenuMui />
+          
+    </div>
+
   )
 }
-
-export default Menu
