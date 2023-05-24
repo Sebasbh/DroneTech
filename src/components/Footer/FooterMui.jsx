@@ -34,20 +34,18 @@ export const FooterMui = () => {
                 mail:info@instadrone.com info@instadrone.com <br />
                 tel:912287734-912287734 <br /> <br />
 
-                <span style={{ color: '#201E1F', fontSize: '18px', fontWeight: '500' }}>AYUDA</span> <br />
-                Especialistas en drones <br />
-                Asesoramiento personalizado <br />
-                Servicio Técnico/Postventa <br />
-                Opiniones
               </Typography>
             </FooterSection>
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
             <FooterSection>
               <Typography variant="body2" align="center">
-                <span style={{ color: '#201E1F', fontSize: '18px', fontWeight: '500' }}>HORARIO</span> <br />
-                Lunes a Viernes <br />
-                10:00-14:00 Y 17:00-20:30
+         
+              <span style={{ color: '#201E1F', fontSize: '18px', fontWeight: '500' }}>AYUDA</span> <br />
+                Especialistas en drones <br />
+                Asesoramiento personalizado <br />
+                Servicio Técnico/Postventa <br />
+                Opiniones
               </Typography>
             </FooterSection>
           </Grid>
@@ -67,19 +65,26 @@ export const FooterMui = () => {
           <Grid item xs={12} sm={6} md={3}>
             <FooterSection>
               <Typography variant="body2" align="center">
-                <span style={{ color: '#201E1F', fontSize: '18px', fontWeight: '500' }}>SIGUENOS</span> <br /> <br />
+                <span style={{ color: '#201E1F', fontSize: '18px', fontWeight: '500' }}>SIGUENOS</span> <br /> 
                 <TwitterIcon className="social-icon" />
                 <FacebookIcon className="social-icon" />
                 <InstagramIcon className="social-icon" />
                 <LinkedInIcon className="social-icon" />
                 <YouTubeIcon className="social-icon" />
+                <br />   <br /> 
+
+               
+                <span style={{ color: '#201E1F', fontSize: '18px', fontWeight: '500' }}>HORARIO</span> <br />
+                Lunes a Viernes <br />
+                10:00-14:00 Y 17:00-20:30
               </Typography>
             </FooterSection>
           </Grid>
         </Grid>
+        <br /> <br />
 
-        <Typography variant="body2" align="center" style={{color:'#201E1F'}}>
-          ©️ 2023 Instadron, Inc. Informacion legal | Politica de privacidad.
+        <Typography variant="body2" align="center" style={{color:'#201E1F',fontSize: '20px', fontWeight: '500' }}>
+          ©️ 2023 Instadron, Inc. Informacion legal/Politica de privacidad.
         </Typography>
       </Container>
     </FooterContainer>

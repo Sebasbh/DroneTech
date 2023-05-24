@@ -13,11 +13,11 @@ import axios from 'axios';
         axios("data.json").then((res)=>setData(res.data))
 
     },[])
-
+    //const updatedata= (newdata)=>{setData(newdata)}
 
   return (
-  <getDron.Provider value={{data}}>{children}</getDron.Provider>
-   
+  <getDron.Provider value={{data, setData}}>{children}</getDron.Provider>
+  
   )
 }
 
