@@ -31,28 +31,35 @@ function MenuDropdown({ anchorEl, handleClose }) {
     >
       {/* Agrega aquí los elementos del menú */}
       <MenuItem onClick={handleClose}>
-        <Link to="/HomePage/" className="menuLink">
-          Home Page
+        <Link to="" className="menuLink">
+          Inicio
         </Link>
       </MenuItem>
       <MenuItem onClick={handleClose}>
-        <Link to="/ProductDetails/" className="menuLink">
-          Product Detail
+        <Link to="" className="menuLink">
+          Perfil
         </Link>
       </MenuItem>
       <MenuItem onClick={handleClose}>
-        <Link to="/Pages/" className="menuLink">
-          Pages Cart
+        <Link to="" className="menuLink">
+          Buscar
         </Link>
       </MenuItem>
       <MenuItem onClick={handleClose}>
-        <Link to="/search/" className="menuLink">
-          Search
+        <Link to="" className="menuLink">
+          Carrito
+        </Link>
+      </MenuItem>
+      <MenuItem onClick={handleClose}>
+        <Link to="" className="menuLink">
+          Contacto
         </Link>
       </MenuItem>
     </Menu>
-  );
+  );  
+
 }
+
 
 export default MenuDropdown;
 
