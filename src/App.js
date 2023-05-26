@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import {HomePage} from './Pages/HomePage/HomePage';
 import {Cards} from './components/Main/Cards'
 import {PageCart} from './Pages/PagesCart/PageCart'
-import { SearchPages } from './Pages/SearchPages/SearchPages';
 import { UserProvider } from './Context/UserProvider';
 import { Contacto } from './Pages/Contacto/Contacto';
 

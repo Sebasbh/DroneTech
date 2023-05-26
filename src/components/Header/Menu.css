@@ -1,0 +1,9 @@
+.menuLink {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .menuLink:hover {
+    color: #FF4000;
+  }
+  

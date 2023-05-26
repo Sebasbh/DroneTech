@@ -64,7 +64,7 @@ export function Cards() {
           <CardHeader
           // Se envuelve el nombre del dron (dron.name) en un componente Typography y se le aplica el estilo fontWeight: 'bold' para hacerlo negrita.
             title={
-              <Typography variant="h6" sx={{ fontWeight: '500' }}> 5
+              <Typography variant="h6" sx={{ fontWeight: '500' }}> 
                 {dron.name}
               </Typography>
             }
