@@ -8,7 +8,6 @@ import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
-import { Link } from 'react-router-dom';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
@@ -102,13 +101,11 @@ export function SearchMui() {
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
-            <Link to="/search/">
               <StyledInputBase
                 placeholder="Buscar"
                 inputProps={{ 'aria-label': 'search' }}
                 sx={{ color: 'black' }}
               />
-            </Link>
           </Search>
         </Toolbar>
       </AppBar>
