@@ -18,12 +18,6 @@ import '@fontsource/roboto/700.css';
 
 
 
-
-
-
-
-
-
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
   borderRadius: theme.shape.borderRadius,
@@ -99,7 +93,10 @@ export function SearchMui() {
             }}
           >
             <img src="/assets/Fotos/icon_dron.png" alt="Logo" style={{ width: '40px', height: 'auto', marginRight: '10px', color: '#white'}} />
-            <span style={{ fontFamily: 'Roboto', fontSize: '24px', fontWeight: '300' }}>DroneTech</span>
+         
+            
+         <Link to="/"><span className='nameApp' style={{ fontFamily: 'Roboto', fontSize: '24px', fontWeight: '300' }}>DroneTech</span></Link>
+          
           </Typography>         
             <AddShoppingCartIcon />
           <Search>

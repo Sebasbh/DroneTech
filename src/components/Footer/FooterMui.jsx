@@ -66,11 +66,11 @@ export const FooterMui = () => {
             <FooterSection>
               <Typography variant="body2" align="center">
                 <span style={{ color: '#201E1F', fontSize: '18px', fontWeight: '500' }}>SIGUENOS</span> <br /> 
-                <TwitterIcon className="social-icon" />
-                <FacebookIcon className="social-icon" />
-                <InstagramIcon className="social-icon" />
-                <LinkedInIcon className="social-icon" />
-                <YouTubeIcon className="social-icon" />
+                <TwitterIcon className="social-icon" fontSize='medium' />
+                <FacebookIcon className="social-icon" fontSize='medium' />
+                <InstagramIcon className="social-icon" fontSize='medium'  />
+                <LinkedInIcon className="social-icon" fontSize='medium'  />
+                <YouTubeIcon className="social-icon" fontSize='medium'  />
                 <br />   <br /> 
 
                

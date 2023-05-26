@@ -5,6 +5,8 @@ import {Cards} from './components/Main/Cards'
 import {PageCart} from './Pages/PagesCart/PageCart'
 import { SearchPages } from './Pages/SearchPages/SearchPages';
 import { UserProvider } from './Context/UserProvider';
+import { Contacto } from './Pages/Contacto/Contacto';
+
 export function App() {
 
   return ( 
@@ -15,6 +17,7 @@ export function App() {
             <Route path="/imagen" element={<Cards/>} />
             <Route path="/cart" element={<PageCart/>} />
             <Route path="/search" element={<SearchPages/>} />
+            <Route path="/contacto" element={<Contacto/>} />
         </Routes>
     </BrowserRouter>
 </UserProvider>

@@ -4,6 +4,7 @@ import { CardGrid } from '../../components/Main/CardGrid'
 import { Banner } from '../../components/Main/Banner'
 import { Footer} from '../../components/Footer/Footer'
 
+
 export function HomePage () {
   return (
     <>
@@ -11,6 +12,7 @@ export function HomePage () {
    <Banner />
    <CardGrid />
    <Footer />
+
    </>
   )
 }

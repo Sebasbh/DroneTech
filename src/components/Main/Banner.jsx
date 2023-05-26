@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
   
 //  export const Banner = () => {
 //   return ( <div className="banner">
@@ -6,6 +7,7 @@
     
 //   )
 // }
+
 
 export const Banner = () => {
         return (
@@ -16,7 +18,10 @@ export const Banner = () => {
             <div className="text-wrapper">
               <h1>DroneTech</h1>
               <p>Tu solución en drones</p>
-              <button className="contact-button">Contactar</button>
+              <Link to="./Contacto">
+              <button 
+              className="contact-button">Contactar</button>
+                </Link>
             </div>
           </div>
         );

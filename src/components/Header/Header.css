@@ -1,11 +1,14 @@
 /* .header {
     background-color: blue;
 } */
+
+/*
 .link{
-    text-decoration: initial;
+    text-decoration: none;
   color: rgb(0, 0, 0);
   
-}
+}*/
+
 input{
     text-decoration: none;
     color: aliceblue;
@@ -19,4 +22,9 @@ input{
         color: aliceblue;
     }
 
+    .nameApp {
+        text-decoration: none;
+        color: aliceblue;
+
+    }
   
