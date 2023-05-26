@@ -51,7 +51,7 @@ function MenuDropdown({ anchorEl, handleClose }) {
         </Link>
       </MenuItem>
       <MenuItem onClick={handleClose}>
-        <Link to="" className="menuLink">
+        <Link to="/contacto/" className="menuLink">
           Contacto
         </Link>
       </MenuItem>

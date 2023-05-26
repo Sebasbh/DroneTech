@@ -15,7 +15,6 @@ export function App() {
             <Route path="/" element={<HomePage/>} />
             <Route path="/imagen" element={<Cards/>} />
             <Route path="/cart" element={<PageCart/>} />
-            <Route path="/search" element={<SearchPages/>} />
             <Route path="/contacto" element={<Contacto/>} />
         </Routes>
     </BrowserRouter>
