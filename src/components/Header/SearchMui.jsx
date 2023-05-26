@@ -15,6 +15,7 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
 import Menu from './Menu';
+import Modal from './Modal'; // Import the modal component you create separately
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -61,6 +62,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export function SearchMui() {
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const [isModalOpen, setIsModalOpen] = React.useState(false); // Add state for modal
 
   const handleMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
@@ -68,6 +70,14 @@ export function SearchMui() {
 
   const handleMenuClose = () => {
     setAnchorEl(null);
+  };
+
+  const handleSearchIconClick = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleModalClose = () => {
+    setIsModalOpen(false);
   };
 
   return (
@@ -91,25 +101,26 @@ export function SearchMui() {
               flexGrow: 1,
               display: { xs: 'none', sm: 'block', default: 'flex' },
               alignItems: 'center',
-            }}            
+            }}
           >
-            <img src="/assets/Fotos/icon_dron.png" alt="Logo" style={{ width: '40px', height: 'auto', marginRight: '10px', color: '#white'}} />
+            <img src="/assets/Fotos/icon_dron.png" alt="Logo" style={{ width: '40px', height: 'auto', marginRight: '10px', color: '#white' }} />
             <span style={{ fontFamily: 'Roboto', fontSize: '24px', fontWeight: '300' }}>DroneTech</span>
           </Typography>
           <AddShoppingCartIcon />
           <Search>
-            <SearchIconWrapper>
+            <SearchIconWrapper onClick={handleSearchIconClick}>
               <SearchIcon />
             </SearchIconWrapper>
-              <StyledInputBase
-                placeholder="Buscar"
-                inputProps={{ 'aria-label': 'search' }}
-                sx={{ color: 'black' }}
-              />
+            <StyledInputBase
+              placeholder="Buscar"
+              inputProps={{ 'aria-label': 'search' }}
+              sx={{ color: 'black' }}
+            />
           </Search>
         </Toolbar>
       </AppBar>
       <Menu anchorEl={anchorEl} handleClose={handleMenuClose} />
+      <Modal open={isModalOpen} handleClose={handleModalClose} />
     </Box>
   );
 }
