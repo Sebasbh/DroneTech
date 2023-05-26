@@ -5,8 +5,12 @@ import {Cards} from './components/Main/Cards'
 import {PageCart} from './Pages/PagesCart/PageCart'
 import { SearchPages } from './Pages/SearchPages/SearchPages';
 import { UserProvider } from './Context/UserProvider';
-export function App() {
+import { ProductDetails } from './Pages/ProductDetails/ProductDetails';
 
+
+
+
+export function App() {
   return ( 
   <UserProvider>
       <BrowserRouter>
@@ -15,6 +19,7 @@ export function App() {
             <Route path="/imagen" element={<Cards/>} />
             <Route path="/cart" element={<PageCart/>} />
             <Route path="/search" element={<SearchPages/>} />
+            <Route path="/detail/:id" element={<ProductDetails/>} />
         </Routes>
     </BrowserRouter>
 </UserProvider>

@@ -18,7 +18,8 @@ export const PageCart=()=>{
   ) : (
     <div className="main-container">
       <Header />
-      <div className="prueba"><h2>Tu carrito está vacío</h2></div>    
+      <div className="emptycart"><h2>Tu carrito está vacío</h2></div>
+          
       <Footer className="footer"/>
     </div>
   );

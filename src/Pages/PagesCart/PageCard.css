@@ -24,6 +24,22 @@ html, body {
   .prueba{
    height: 800px;
   }
+
+
+
+  .emptycart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Ajusta este valor según tu preferencia */
+  }
+  
+  .emptycart h2 {
+    font-size: 24px; /* Ajusta este valor según tu preferencia */
+    color: #201E1F;
+    font-weight: 300;
+  }
+  
   
   
   

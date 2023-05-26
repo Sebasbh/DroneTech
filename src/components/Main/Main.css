@@ -9,7 +9,16 @@
   
 }
 
-button:hover{
+.buybutton{
+  border: none;
+  text-decoration: none;
+  outline: none;
+  background-color: #f8f9fa;
+}
+
+.buybutton:hover{
+  background-color: #f8f9fa;
+  border-radius: 20px;
   color:#FF4000
 }
 .buton:hover{
@@ -109,7 +118,3 @@ button:hover{
 
 }
 
-.buybutton button{
-  border: none;
-  text-decoration: none;
-}

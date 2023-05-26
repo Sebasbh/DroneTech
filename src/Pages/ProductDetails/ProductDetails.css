@@ -1,4 +1,52 @@
-.H1{
-    font-size: 200px;
-    color: blueviolet;
+.container-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
+
+.container-name {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 200px;
+}
+
+.container-name img {
+    width: 400px;
+}
+
+.container-name h3 {
+    font-size: 30px;
+}
+
+.container-description {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 25%;
+}
+
+.container-description p {
+    font-size: 20px;
+
+}
+
+.container-description button {
+    margin-right: 20px;
+    height: 30px;
+    width: 100px;
+    background-color: #201e1f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.container-description button:hover {
+    transition: ease-in-out 0.3s;
+    background-color: #FF4000;
+    color: white;
+}
+

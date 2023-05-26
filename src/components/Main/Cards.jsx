@@ -9,7 +9,8 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
-import {getDron} from '../../Context/UserProvider';
+import { getDron } from '../../Context/UserProvider';
+import { Link } from 'react-router-dom';
 
 
 
@@ -25,21 +26,10 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
-export const Cards=()=>{
-  const {data, cart, setCart}=useContext(getDron)
+export const Cards = () => {
+  const { data, cart, setCart, setCartQuantity, buyProducts } = useContext(getDron)
   //const [data, setData] = useState([]);
   const [cardStates, setCardStates] = useState({});
-
-  /*useEffect(() => {
-    axios
-      .get('data.json')
-      .then((response) => {
-        setData(response.data);
-      })
-      .catch((error) => {
-        console.error('Error al obtener los datos:', error);
-      });
-  }, []);*/
 
   const handleExpandClick = (id) => {
     setCardStates({
@@ -50,12 +40,22 @@ export const Cards=()=>{
     });
   };
 
-// Función de añadir al carrito:
-  const buyProducts=(dron) =>{
-     setCart([...cart,dron])
-  
+  const handleFavoriteClick = (id) => {
+    setCardStates({
+      ...cardStates,
+      [id]: {
+        ...cardStates[id],
+        isFavorite: !cardStates[id]?.isFavorite,
+      },
+    });
   };
 
+  // // Función de añadir al carrito:
+  //   const buyProducts=(dron) =>{
+  //      setCart([...cart,dron])
+
+  //   };
+  setCartQuantity(cart.length)
   return (
     <>
       {data.map((dron) => (
@@ -71,9 +71,9 @@ export const Cards=()=>{
           }}
         >
           <CardHeader
-          // Se envuelve el nombre del dron (dron.name) en un componente Typography y se le aplica el estilo fontWeight: 'bold' para hacerlo negrita.
+            // Se envuelve el nombre del dron (dron.name) en un componente Typography y se le aplica el estilo fontWeight: 'bold' para hacerlo negrita.
             title={
-              <Typography variant="h6" sx={{ fontWeight: '500' }}> 5
+              <Typography variant="h6" sx={{ fontWeight: '500' }}> 
                 {dron.name}
               </Typography>
             }
@@ -87,23 +87,24 @@ export const Cards=()=>{
               </Avatar>
             }
             action={
-              <IconButton className="buybutton"  caria-label="settings">
-                <button onClick={()=>buyProducts(dron)}>
-                <ShoppingCartCheckoutOutlinedIcon />
+              <IconButton caria-label="settings">
+                <button className="buybutton" onClick={() => buyProducts(dron)}>
+                  <ShoppingCartCheckoutOutlinedIcon />
                 </button>
               </IconButton>
             }
           />
-          <CardMedia component="img" height="194" image={dron.image} alt="dron.img" />
+          <Link to={`/detail/${dron.id}`}><CardMedia component="img" height="194"  image={dron.image} alt="dron.img" /></Link>
           <CardContent>
             {/*se envuelve el precio del dron (dron.price) en un componente Typography y se le aplica el estilo fontWeight: 'bold' para hacerlo negrita.  */}
             <Typography variant="body2" color="text.secondary" sx={{ fontWeight: 'bold' }}>
               {dron.price}€
             </Typography>
           </CardContent>
+
           <CardActions disableSpacing>
-            <IconButton aria-label="add to favorites">
-              <FavoriteIcon />
+            <IconButton aria-label="add to favorites" onClick={() => handleFavoriteClick(dron.id)}>
+              <FavoriteIcon className={cardStates[dron.id]?.isFavorite ? 'heart active' : 'heart'} />
             </IconButton>
 
             <ExpandMore
@@ -126,3 +127,4 @@ export const Cards=()=>{
     </>
   );
 }
+
