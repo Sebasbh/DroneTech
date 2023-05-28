@@ -14,6 +14,8 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import Menu from './Menu';
 import Modal from './Modal';
+import { FavoriteIconHeader } from './FavoritesIconHeader';
+import { FavoriteCount } from './FavoriteCount';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -77,7 +79,9 @@ export function SearchMui() {
             <img src="/assets/Fotos/icon_dron.png" alt="Logo" style={{ width: '40px', height: 'auto', marginRight: '10px', color: '#white'}} />
             <Link to="/"><span className='nameApp' style={{ fontFamily: 'Roboto', fontSize: '24px', fontWeight: '300' }}>DroneTech</span></Link>
           
-          </Typography>         
+          </Typography> 
+            <FavoriteCount/>
+            <FavoriteIconHeader/>
             <AddShoppingCartIcon />
           <Search>
           <Modal open={isModalOpen} handleClose={handleModalClose} />

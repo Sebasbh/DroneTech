@@ -5,7 +5,7 @@
     "type": "Profesional",
     "price": 6999,
     "image": "../assets/Fotos drones/AERO-1X.png",
-    "description": "El dron AERO-1X es portátil y de alta precisión. Diseño plegable para transportar y volar en cualquier momento.",
+    "description": "El dron AERO-1X es portátil y de alta precisión. Con su diseño plegable, este dron profesional te permite llevarlo contigo a cualquier lugar y disfrutar de vuelos precisos y estables. Equipado con tecnología de vanguardia, como sistemas de posicionamiento GPS y estabilización de vuelo avanzada, el AERO-1X te brinda un rendimiento excepcional y una experiencia de vuelo profesional. Ya sea que estés capturando tomas aéreas impresionantes para producción audiovisual o realizando inspecciones técnicas, este dron es una herramienta confiable y versátil.",
     "cantidad": 1
   },
   { 
@@ -14,7 +14,7 @@
     "type": "Semiprofesional",
     "price": 1499,
     "image": "../assets/Fotos drones/AERO-4P.jpg",
-    "description": "El dron AERO-4P es compacto y aerodinámico. Ideal para volar con precisión en espacios reducidos. Listo para la acción.",
+    "description": "El dron AERO-4P es compacto y aerodinámico, lo que lo convierte en la opción ideal para volar con precisión en espacios reducidos. Su diseño elegante y su estructura ligera facilitan el manejo y la maniobrabilidad. Equipado con una cámara de alta resolución y funciones de seguimiento automático, el AERO-4P te permite capturar imágenes y videos impresionantes desde el aire con facilidad. Este dron semiprofesional es perfecto para entusiastas de la fotografía y videografía que buscan explorar su creatividad desde una perspectiva única.",
     "cantidad": 1
   },
   { 
@@ -23,7 +23,7 @@
     "type": "Profesional",
     "price": 3299,
     "image": "../assets/Fotos drones/AERO-7W.jpg",
-    "description": "El dron AERO-7W es resistente y estable. Diseñado para aventuras al aire libre, incluso en condiciones climáticas adversas.",
+    "description": "El dron AERO-7W es resistente y estable, diseñado para aventuras al aire libre incluso en condiciones climáticas adversas. Su estructura duradera y su sistema de propulsión potente le permiten enfrentar vientos fuertes y condiciones difíciles. Con una cámara de alta calidad y capacidades de transmisión en vivo, el AERO-7W te permite capturar momentos impresionantes en tus expediciones al aire libre. Ya sea que estés explorando paisajes naturales o realizando actividades deportivas, este dron profesional te proporciona un rendimiento confiable y resultados excepcionales.",
     "cantidad": 1
   },
   { 
@@ -32,7 +32,7 @@
     "type": "Semiprofesional",
     "price": 1299,
     "image": "../assets/Fotos drones/AERO-10G.png",
-    "description": "El dron AERO-10G es futurista y emocionante. Con tecnología de vanguardia y potente motor, te lleva a nuevas alturas.",
+    "description": "El dron AERO-10G es futurista y emocionante, equipado con tecnología de vanguardia y un potente motor para llevarte a nuevas alturas. Con su diseño aerodinámico y su sistema de control de vuelo preciso, este dron semiprofesional te brinda una experiencia de vuelo dinámica y rápida. Además, su cámara de alta resolución y estabilización de imagen avanzada garantizan la captura de imágenes y videos nítidos y detallados. Ya sea que desees realizar acrobacias aéreas o simplemente explorar el mundo desde una perspectiva única, el AERO-10G te ofrece un vuelo emocionante y un rendimiento excepcional.",
     "cantidad": 1
   },
   { 
@@ -41,7 +41,7 @@
     "type": "Profesional",
     "price": 5999,
     "image": "../assets/Fotos drones/AERO-11X.png",
-    "description": " El dron AERO-11X es de última generación, con tecnología avanzada y diseño innovador. Ágil y dinámico para disfrutar.",
+    "description": " El dron AERO-11X es de última generación, con tecnología avanzada y un diseño innovador que combina estilo y funcionalidad. Su estructura liviana y aerodinámica, junto con su potente sistema de propulsión, te brindan una experiencia de vuelo ágil y dinámica. Con características como el seguimiento automático de objetos y la detección de obstáculos, este dron profesional te permite capturar tomas impresionantes de forma sencilla y segura. Ya sea que estés realizando producciones audiovisuales profesionales o simplemente disfrutando de la fotografía aérea, el AERO-11X es tu compañero ideal en el cielo.",
     "cantidad": 1
   },
   { 
@@ -50,7 +50,7 @@
     "type": "Semiprofesional",
     "price": 1799,
     "image": "../assets/Fotos drones/NIMB-6S.png",
-    "description": "El dron NIMB-6S es avanzado y estable. Diseño elegante y tecnología de vanguardia para un vuelo suave.",
+    "description": "El dron NIMB-6S es un dron semiprofesional avanzado y estable. Con su diseño elegante y aerodinámico, este dron combina estilo y funcionalidad. Equipado con tecnología de vanguardia, como sistemas de estabilización de vuelo y control de altitud, el NIMB-6S te ofrece un vuelo suave y preciso. Su cámara de alta resolución te permite capturar imágenes y videos de alta calidad desde el aire. Ya sea que estés realizando grabaciones cinematográficas o explorando paisajes naturales, este dron te brinda un rendimiento excepcional y resultados impresionantes.",
     "cantidad": 1
   },
 {   
@@ -59,7 +59,7 @@
     "type": "Semiprofesional",
     "price": 1999,
     "image": "../assets/Fotos drones/SKY-5X.png",
-    "description": "El SKY-5X es un dron de tamaño medio, perfecto para realizar fotografías y videos aéreos de alta calidad.",
+    "description": "El SKY-5X es un dron de tamaño medio, perfecto para realizar fotografías y videos aéreos de alta calidad. Con su diseño compacto y características de vuelo estables, este dron semiprofesional te permite capturar tomas impresionantes desde diferentes perspectivas. Su cámara de alta resolución y funciones de transmisión en vivo te permiten compartir tus aventuras aéreas en tiempo real. Además, su estructura resistente y duradera lo hace adecuado para uso en exteriores. Disfruta de una experiencia de vuelo emocionante y captura momentos inolvidables con el SKY-5X.",
     "cantidad": 1
 },
 {   
@@ -68,7 +68,7 @@
     "type": "Recreativo",
     "price": 449,
     "image": "../assets/Fotos drones/AERO-11X.png",
-    "description": " El dron SKY-9S es fácil de usar y llevar. Diseño intuitivo y estable, ideal para aquellos que buscan una experiencia.",
+    "description": "El dron SKY-9S es ideal para aquellos que buscan una experiencia recreativa fácil de usar y llevar. Con su diseño intuitivo y estable, este dron es perfecto para principiantes y entusiastas que desean explorar el vuelo de manera sencilla. Su estructura ligera y compacta lo hace portátil y conveniente para llevarlo contigo a donde vayas. Aunque está orientado a usuarios recreativos, el SKY-9S aún ofrece un rendimiento confiable y funciones básicas para disfrutar del vuelo y capturar imágenes aéreas impresionantes.",
     "cantidad": 1
 },
 {   
@@ -77,7 +77,7 @@
     "type": "Recreativo",
     "price": 99,
     "image": "../assets/Fotos drones/SKYV-2T.jpg",
-    "description": "El dron SKYV-2T es compacto y fácil de transportar. Diseño plegable para capturar vistas impresionantes desde el aire.",
+    "description": "El dron SKYV-2T es compacto y fácil de transportar, con un diseño plegable que te permite llevarlo contigo a cualquier aventura. Este dron recreativo es perfecto para aquellos que desean capturar vistas impresionantes desde el aire. A pesar de su tamaño compacto, el SKYV-2T está equipado con funciones básicas que te permiten disfrutar de la experiencia de vuelo y explorar tu entorno de manera divertida y emocionante. Ya sea que estés realizando vuelos recreativos o capturando imágenes panorámicas, este dron compacto te brinda la oportunidad de disfrutar del vuelo y capturar momentos memorables desde una perspectiva única.",
     "cantidad": 1
 },
 {   
@@ -86,7 +86,7 @@
     "type": "Recreativo",
     "price": 159,
     "image": "../assets/Fotos drones/SWIFT-8H.png",
-    "description": "El dron SWIFT-8H es ágil y rápido. Diseñado para maniobras impresionantes y emocionante experiencia de vuelo.",
+    "description": "El dron SWIFT-8H es un dron recreativo diseñado para brindar agilidad y velocidad. Con su estructura aerodinámica y su potente sistema de propulsión, este dron te permite realizar maniobras impresionantes en el aire. Ya sea que desees realizar acrobacias, carreras o simplemente disfrutar de la emoción del vuelo rápido, el SWIFT-8H te proporciona una experiencia de vuelo emocionante. Además, su diseño robusto y su fácil control lo convierten en una opción ideal para aquellos que buscan un dron recreativo de alto rendimiento.",
     "cantidad": 1
 },
 {   
@@ -95,7 +95,7 @@
     "type": "Recreativo",
     "price": 780,
     "image": "../assets/Fotos drones/AERO-11X.png",
-    "description": "El dron WING-3S es de ala fija. Ideal para aquellos que buscan una experiencia de vuelo diferente y emocionante.",
+    "description": "El dron WING-3S es un dron de ala fija, perfecto para aquellos que desean experimentar una experiencia de vuelo diferente y emocionante. A diferencia de los drones tradicionales, el WING-3S cuenta con alas fijas que le brindan estabilidad y un rendimiento excepcional en vuelos de largo alcance. Con su diseño aerodinámico y su capacidad de planear en el aire, este dron te permite explorar grandes áreas y disfrutar de vuelos prolongados. Ya sea que desees realizar fotografía aérea, mapeo o simplemente disfrutar de la sensación de volar, el WING-3S te ofrece una experiencia única.",
     "cantidad": 1
     
 },
@@ -106,7 +106,7 @@
     "type": "Recreativo",   
     "price": 299,    
     "image": "../assets/Fotos drones/NIMB-6S.png",    
-    "description": "Un dron recreativo con un diseño plegable y controles intuitivos. Es perfecto para principiantes y aficionados."
+    "description": "El dron SKY-12T es un dron recreativo con un diseño plegable y controles intuitivos. Este dron es perfecto para principiantes y aficionados que desean iniciarse en el mundo del vuelo. Con su estructura liviana y compacta, el SKY-12T es fácil de transportar y llevar contigo a cualquier lugar. Su sistema de estabilización de vuelo y sus funciones básicas te brindan una experiencia de vuelo estable y segura. Disfruta de la diversión del vuelo recreativo y captura momentos especiales desde el aire con el SKY-12T."
 },  
 {   
     "id": 13, 
@@ -114,7 +114,7 @@
     "type": "Recreativo",    
     "price": 399,      
     "image": "../assets/Fotos drones/AERO-7W.jpg",    
-    "description": "Un dron recreativo con un diseño elegante y un alto rendimiento en velocidad. Cuenta con modos de vuelo avanzados."
+    "description": "El dron SWIFT-10H es un dron recreativo con un diseño elegante y un alto rendimiento en velocidad. Este dron te brinda la oportunidad de disfrutar de vuelos emocionantes y rápidos. Con su potente motor y su capacidad de respuesta ágil, el SWIFT-10H te permite realizar maniobras impresionantes en el aire. Además, cuenta con modos de vuelo avanzados que te permiten personalizar tu experiencia de vuelo de acuerdo a tus preferencias. Ya sea que desees realizar carreras o simplemente disfrutar de la adrenalina del vuelo rápido, el SWIFT-10H está diseñado para brindarte una experiencia emocionante y llena de diversión."
 },  
 {   
     "id": 14,   
@@ -122,7 +122,7 @@
     "type": "Recreativo",    
     "price": 780,      
     "image": "../assets/Fotos drones/WING-4S.png",    
-    "description": "Un dron de ala fija. Ideal para aquellos que buscan una experiencia de vuelo diferente y emocionante.",    
+    "description": "El dron WING-4S es un dron de ala fija, ideal para aquellos que buscan una experiencia de vuelo diferente y emocionante. Con su diseño aerodinámico y su capacidad de vuelo de largo alcance, este dron te permite explorar grandes distancias y disfrutar de vuelos prolongados. Su estructura resistente y su sistema de estabilización de vuelo garantizan un rendimiento confiable y estable en el aire. Ya sea que desees realizar fotografía aérea, mapeo o simplemente disfrutar del vuelo enérgico, el WING-4S te ofrece una experiencia única y emocionante.",    
     "cantidad": 1  
 },  
 {   
@@ -131,7 +131,7 @@
     "type": "Recreativo",    
     "price": 99,      
     "image": "../assets/Fotos drones/SKYV-2T.jpg",    
-    "description": "Un dron compacto y fácil de transportar. Diseño plegable para capturar vistas impresionantes desde el aire.",    
+    "description": "El dron SKYV-3T es un dron compacto y fácil de transportar, con un diseño plegable que te permite capturar vistas impresionantes desde el aire. Este dron recreativo está diseñado para aquellos que desean disfrutar de la experiencia de vuelo y capturar momentos memorables en cualquier lugar. A pesar de su tamaño compacto, el SKYV-3T cuenta con funciones básicas que te permiten volar con facilidad y estabilidad. Su cámara integrada te permite capturar imágenes y videos de alta calidad mientras exploras tu entorno desde una perspectiva única.",    
     "cantidad": 1  
 }
 

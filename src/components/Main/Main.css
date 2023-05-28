@@ -108,3 +108,53 @@ button:hover{
   transition: 0.5s ease-in-out;
 
 }
+.favorite {
+  color: #FF4000;
+}
+
+.favorite-drone {
+  display: flex;
+  align-items: center;
+  ;
+}
+
+
+.image-container {
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.drone-details {
+  flex-grow: 1;
+}
+.favorite-container {
+  padding: 30px;
+  min-height: 55vh;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  flex-grow: 1;
+  margin-bottom: 0; /* Evita que el margen inferior del ul empuje al footer */
+}
+
+.footer {
+  text-align: center;
+}
+
+.centered-heading {
+  text-align: center; /* Centrar texto horizontalmente */
+}
+.emptyfavorites {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh; /* Ajusta este valor según tu preferencia */
+}
+
+.emptyfavorites h2 {
+  font-size: 24px; /* Ajusta este valor según tu preferencia */
+  color: #201E1F;
+  font-weight: 300;
+}
