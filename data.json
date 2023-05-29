@@ -110,7 +110,7 @@
     "image": "../assets/Fotos drones/NIMB-6S.png",    
     "description": "Un dron recreativo con un diseño plegable y controles intuitivos. Es perfecto para principiantes y aficionados.",
     "quantity": 1
-  },  
+},  
 {   
     "id": 13, 
     "name": "SWIFT-10H",    
@@ -119,7 +119,7 @@
     "image": "../assets/Fotos drones/AERO-7W.jpg",    
     "description": "Un dron recreativo con un diseño elegante y un alto rendimiento en velocidad. Cuenta con modos de vuelo avanzados.",
     "quantity": 1
-  },  
+},  
 {   
     "id": 14,   
     "name": "WING-4S",    

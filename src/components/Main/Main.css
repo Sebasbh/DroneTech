@@ -1,5 +1,74 @@
-.grid{
-    margin-top: 100px;
+
+
+/* FILTRO BOTONES */
+
+.filters{
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  text-align:left;
+  margin-left: 20px;
+  
+  
+}
+
+.filters button {
+  font-family: 'Roboto';
+  background-color: #201E1F;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  width: 120px;
+  height: 40px;
+  font-weight: 200;
+  font-size: 14px;
+  margin-right: 10px;
+  cursor: pointer;
+
+}
+
+.filters button:hover{
+  background-color:#FF4000; /* Color de fondo del botón al pasar el cursor */
+  color: #f8f9fa;
+  transition: 0.5s ease-in-out;
+}
+
+
+/* REJILLA PRODUCTOS */
+
+.cards-title-container {
+  font-weight: 300;
+  color: #201E1F;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-top: 25px;
+  display: inline-block;
+ 
+}
+
+.card-section{
+  font-size: 25px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+
+.card-item {
+  width: 100%;
+  max-width: 345px;
+  background-color: #f8f9fa;
+  transition: transform 0 }
+
+
+
+.cards{
+  margin-top: 50px;
   align-items: center;
   display: grid;
   gap: 40px;
@@ -9,7 +78,18 @@
   
 }
 
-button:hover{
+/* BOTÓN COMPRAR */
+
+.buybutton{
+  border: none;
+  text-decoration: none;
+  outline: none;
+  background-color: #f8f9fa;
+}
+
+.buybutton:hover{
+  background-color: #f8f9fa;
+  border-radius: 20px;
   color:#FF4000
 }
 .buton:hover{
@@ -54,12 +134,15 @@ button:hover{
   background-color: rgba(23, 23, 23, 0.116); 
 } */
 
+/* BANNER */
+
 .banner {
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 50vh;
-  background-color: #f8f9fa; /* Color de fondo del banner */
+  background-color: #f8f9fa; /*Color de fondo del banner */
+ 
 }
 
 .image-wrapper {
@@ -74,6 +157,7 @@ button:hover{
   height: 100%;
   object-fit: cover;
 }
+
 
 .text-wrapper {
   text-align: center;
@@ -157,4 +241,10 @@ ul {
   font-size: 24px; /* Ajusta este valor según tu preferencia */
   color: #201E1F;
   font-weight: 300;
+
+}
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

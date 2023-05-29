@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import React, { useContext,useState } from 'react';
 import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -16,6 +17,12 @@ import Menu from './Menu';
 import Modal from './Modal';
 import { FavoriteIconHeader } from './FavoritesIconHeader';
 import { FavoriteCount } from './FavoriteCount';
+import {  getDron } from '../../Context/UserProvider';
+import { Badge } from '@mui/material';
+import { blue } from '@mui/material/colors';
+
+
+
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -38,6 +45,7 @@ const Search = styled('div')(({ theme }) => ({
 export function SearchMui() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [isModalOpen, setIsModalOpen] = React.useState(false); 
+  const {cart,cartQuantity} = useContext(getDron);
 
   const handleMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
@@ -53,9 +61,14 @@ export function SearchMui() {
     setIsModalOpen(false);
   };
 
+
   return (
+    
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{ backgroundColor: '#FF4000', color: '#white' }}>
+      <AppBar position="static" sx={{ backgroundColor: '#FF4000', color: '#white','&:hover': {
+    
+
+        },}}>
         <Toolbar>
           <IconButton
             size="large"
@@ -77,18 +90,28 @@ export function SearchMui() {
             }}
           >
             <img src="/assets/Fotos/icon_dron.png" alt="Logo" style={{ width: '40px', height: 'auto', marginRight: '10px', color: '#white'}} />
-            <Link to="/"><span className='nameApp' style={{ fontFamily: 'Roboto', fontSize: '24px', fontWeight: '300' }}>DroneTech</span></Link>
-          
-          </Typography> 
-            <FavoriteCount/>
+          <Link to="/"><span className='nameApp' style={{ fontFamily: 'Roboto', fontSize: '24px', fontWeight: '300' }}>DroneTech</span></Link>
+      
+          </Typography>  
+          <FavoriteCount/>
             <FavoriteIconHeader/>
             <AddShoppingCartIcon />
+          <IconButton  >
+            <Badge badgeContent={cartQuantity} color="primary">
+              <Link className="iconocarrito" to="/cart">
+              <AddShoppingCartIcon />
+              </Link>
+            </Badge>
+          </IconButton>
+         
+          
           <Search>
-          <Modal open={isModalOpen} handleClose={handleModalClose} />
+            <Modal open={isModalOpen} handleClose={handleModalClose} />
           </Search>
         </Toolbar>
       </AppBar>
       <Menu anchorEl={anchorEl} handleClose={handleMenuClose} />
     </Box>
+  
   );
 }

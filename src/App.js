@@ -6,8 +6,12 @@ import {PageCart} from './Pages/PagesCart/PageCart'
 import { UserProvider } from './Context/UserProvider';
 import { Contacto } from './Pages/Contacto/Contacto';
 import { Favorites } from './Pages/PagesFavorites/PagesFavorites';
-export function App() {
+import { ProductDetails } from './Pages/ProductDetails/ProductDetails';
 
+
+
+
+export function App() {
   return ( 
   <UserProvider>
       <BrowserRouter>
@@ -17,6 +21,7 @@ export function App() {
             <Route path="/cart" element={<PageCart/>} />
             <Route path="/contacto" element={<Contacto/>} />
             <Route path='/favorites' element={<Favorites/>} />
+            <Route path="/detail/:id" element={<ProductDetails/>} />
         </Routes>
     </BrowserRouter>
 </UserProvider>
