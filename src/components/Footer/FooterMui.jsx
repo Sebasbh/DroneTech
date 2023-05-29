@@ -8,6 +8,8 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import "./Footer.css"
+
 
 const FooterContainer = styled('footer')(({ theme }) => ({
   padding: theme.spacing(10),
@@ -23,7 +25,7 @@ const FooterSection = styled('div')({
 
 export const FooterMui = () => {
   return (
-    <FooterContainer>
+    <FooterContainer className='main-footer'>
       <Container maxWidth="md">
         <Grid container spacing={2}>
           <Grid item xs={12} sm={6} md={3}>

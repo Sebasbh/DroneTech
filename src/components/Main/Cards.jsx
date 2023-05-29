@@ -1,9 +1,8 @@
 import React, { useContext, useState } from "react";
-import { styled } from "@mui/material/styles";
 import {Avatar,Card,CardActions,CardContent,CardHeader,CardMedia,Collapse,IconButton,Typography} from "@mui/material";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ShoppingCartCheckoutOutlinedIcon from "@mui/icons-material/ShoppingCartCheckoutOutlined";
 import { FavoriteIconCard } from "./FavoritesIconCard";
+
 import { getDron } from "../../Context/UserProvider";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
@@ -12,7 +11,6 @@ import "@fontsource/roboto/700.css";
 import "./Main.css";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { styled } from '@mui/material/styles';
-import ShoppingCartCheckoutOutlinedIcon from '@mui/icons-material/ShoppingCartCheckoutOutlined';
 import { Link } from 'react-router-dom';
 
 const ExpandMore = styled((props) => {
@@ -116,7 +114,7 @@ export const Cards = () => {
 
             <CardActions disableSpacing>
               <IconButton aria-label="add to favorites" onClick={() => handleFavoriteClick(dron.id)}>
-                <FavoriteIcon className={cardStates[dron.id]?.isFavorite ? 'heart active' : 'heart'} />
+                <FavoriteIconCard className={cardStates[dron.id]?.isFavorite ? 'heart active' : 'heart'} />
               </IconButton>
 
               <ExpandMore

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import React, { useContext,useState } from 'react';
+import { useContext,useState } from 'react';
 import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -95,7 +95,7 @@ export function SearchMui() {
           </Typography>  
           <FavoriteCount/>
             <FavoriteIconHeader/>
-            <AddShoppingCartIcon />
+            
           <IconButton  >
             <Badge badgeContent={cartQuantity} color="primary">
               <Link className="iconocarrito" to="/cart">
