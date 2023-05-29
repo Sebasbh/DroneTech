@@ -31,7 +31,7 @@ function MenuDropdown({ anchorEl, handleClose }) {
     >
       {/* Agrega aquí los elementos del menú */}
       <MenuItem onClick={handleClose}>
-        <Link to="" className="menuLink">
+        <Link to="/" className="menuLink">
           Inicio
         </Link>
       </MenuItem>
@@ -41,8 +41,8 @@ function MenuDropdown({ anchorEl, handleClose }) {
         </Link>
       </MenuItem>
       <MenuItem onClick={handleClose}>
-        <Link to="" className="menuLink">
-          Buscar
+        <Link to="/Favorites/" className="menuLink">
+          Favorites
         </Link>
       </MenuItem>
       <MenuItem onClick={handleClose}>

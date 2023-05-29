@@ -1,0 +1,12 @@
+.emptyfavorites {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; 
+  }
+  
+  .emptyfavorites h2 {
+    font-size: 24px; 
+    color: #201E1F;
+    font-weight: 300;
+  }
