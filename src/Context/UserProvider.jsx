@@ -10,7 +10,7 @@ import axios from 'axios';
     
     const [data, setData] = useState([]);
     useEffect(() => {
-        axios("data.json").then((res)=>setData(res.data))
+        axios("http://localhost:3500/drones").then((res)=>setData(res.data))
 
     },[])
     //const updatedata= (newdata)=>{setData(newdata)}
