@@ -1,58 +1,21 @@
-// import React, { createContext, useEffect, useState } from 'react';
-// import axios from 'axios';
-
-// // Dibujar los drones. Llamado a la "fake" API
-// export const DronContext = createContext();
-
-// export function UserProvider({ children }) {
-//   const [cart, setCart] = useState([]);
-//   const [data, setData] = useState([]);
-//   const [cartQuantity, setCartQuantity] = useState(0);
-
-//   useEffect(() => {
-//     axios("data.json").then((res) => setData(res.data));
-//   }, []);
-
-//   const buyProducts = (dron) => {
-//     const productRepeat = cart.find((item) => item.id === dron.id);
-//     if (productRepeat) {
-//       setCart(
-//         cart.map((item) =>
-//           item.id === dron.id ? { ...dron, quantity: productRepeat.quantity + 1 } : item
-//         )
-//       );
-//     } else {
-//       setCart([...cart, dron]);
-//     }
-//   };
-
-//   return (
-//     <DronContext.Provider
-//       value={{ data, cart, setCart, cartQuantity, setCartQuantity }}
-//     >
-//       {children}
-//     </DronContext.Provider>
-//   );
-// }
-
-
 import { createContext } from 'react';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-//import { DronContext } from './AppContext';
+
 
 // Dibujar los drones. Llamado a la "fake" API
 export const getDron = createContext();
 
 export function UserProvider({ children }) {
-  const [cart, setCart] = useState([]);
   const [data, setData] = useState([]);
   const [cartQuantity, setCartQuantity] = useState(0);
-  
+  const cartLS = JSON.parse(localStorage.getItem('cart'))??[]
+  const [cart, setCart] = useState(cartLS);
 
   useEffect(() => {
     axios("data.json").then((res) => setData(res.data))
   }, [])
+
 
 
  // ------------- FUNCIÓN SUMAR +1 PRODUCTO. REUTILIZABLE -------------------
@@ -68,6 +31,14 @@ export function UserProvider({ children }) {
   };
 
 
+// -------------- LOCAL STORAGE ------------------
+
+  useEffect(()=>{
+    localStorage.setItem('cart',JSON.stringify(cart))
+  },[cart])    
+  
+  
+  
   // ------------- FUNCIÓN RESTAR -1 PRODUCTO. REUTILIZABLE -------------------
 
   const restProducts=(dron)=>{

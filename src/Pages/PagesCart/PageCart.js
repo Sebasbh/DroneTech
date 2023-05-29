@@ -6,8 +6,11 @@ import { Header } from "../../components/Header/Header"
 import { Footer } from "../../components/Footer/Footer"
 import "./PageCard.css"
 
+
+
 export const PageCart=()=>{
-  const {cart}=useContext(getDron)
+  const {cart, setCartQuantity}=useContext(getDron)
+  setCartQuantity(cart.length)
   return cart.length > 0 ? (
     <div className="main-container">
       <Header />

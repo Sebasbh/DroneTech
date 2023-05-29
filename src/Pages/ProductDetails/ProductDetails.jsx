@@ -4,15 +4,17 @@ import { Footer } from '../../components/Footer/Footer';
 import { useParams } from 'react-router-dom';
 import { getDron } from '../../Context/UserProvider';
 import "./ProductDetails.css"
+import { SettingsCellSharp } from '@mui/icons-material';
 
 
 
 export function ProductDetails() {
     const { id } = useParams();
-    const { data, buyProducts } = useContext(getDron);
+    const { data, buyProducts, setCartQuantity, cart } = useContext(getDron);
 
     // Filtrar el producto correspondiente según su id
     const dron = data.find(item => item.id === parseInt(id));
+    setCartQuantity(cart.length)
     return (
         <>
           <Header />
