@@ -54,14 +54,16 @@ export default function BasicModal() {
 
   useEffect(() => {
     // Fetching data from the JSON file
-    fetch('/data.json')
-      .then((response) => response.json())
-      .then((data) => {
-        setModalData(data);
-      })
-      .catch((error) => console.log(error));
-  }, []);
-
+    fetch('../../data.json')
+    .then((response) => response.json())
+    .then((data) => {
+      setModalData(data);
+    })
+    .catch((error) => {
+      console.log('Error fetching data:', error);
+    });
+  
+  })
   return (
     <div>
       <Button
