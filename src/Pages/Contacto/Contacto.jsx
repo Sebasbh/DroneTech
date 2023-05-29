@@ -68,6 +68,7 @@ export function Contacto() {
           <div>
             <h2>¡Formulario enviado!</h2>
             <p>Gracias por contactarnos.</p>
+            <img src="https://cdn.discordapp.com/attachments/1111638004319129661/1111638923723145296/dron_sonriendo.jpg" alt='#'/>
           </div>
         ) : (
           <form onSubmit={handleSubmit}>

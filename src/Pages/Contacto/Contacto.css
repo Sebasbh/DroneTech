@@ -4,9 +4,8 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color:rgb(241, 235, 235);
+    background-color: white;
     gap: 100px;
-   
   }
   
   .infoSection {
