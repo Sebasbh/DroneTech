@@ -1,6 +1,6 @@
 # BIENVENIDO A DroneTech 😎🦾🛸
 
-![Imagen Dron](https://images.app.goo.gl/oksvfrqqxQ6zcpGx8)
+![Imagen Dron](./public/assets/Fotos/DALL%C2%B7E%202023-05-30%2016.56.40.png)
 
 
 ## DronTech es una Página Web de Venta de Drones
