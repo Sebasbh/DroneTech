@@ -2,11 +2,9 @@ import React from 'react'
 import { useContext } from 'react';
 import { getDron } from '../../Context/UserProvider';
 import "./Header.css"
-import { ShoppingCartContents } from './ShoppingCartContents';
 
 
-
-export const ShoppingCart = () => {
+export const ShoppingCart = ({quantity}) => {
 
   const { cart, buyProducts, restProducts, deleteProduct } = useContext(getDron)
   return cart.map((dron) => {
@@ -29,7 +27,7 @@ export const ShoppingCart = () => {
             <span className='column-title'>Cantidad</span>
             <div className='flex-quantity'>
             <button onClick={() =>restProducts(dron)}>-</button>
-              <ShoppingCartContents dron={dron} quantity={dron.quantity} />
+            {quantity}{dron.quantity}
               <button onClick={() =>buyProducts(dron)}>+</button>
             </div>
           </div>

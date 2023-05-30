@@ -6,18 +6,20 @@ import { Header } from "../../components/Header/Header"
 import { Footer } from "../../components/Footer/Footer"
 import "./PageCard.css"
 
-
-
 export const PageCart=()=>{
-  const {cart, setCartQuantity}=useContext(getDron)
-  setCartQuantity(cart.length)
+  const {cart}=useContext(getDron)
   return cart.length > 0 ? (
-    <div className="main-container">
-      <Header />
-      <ShoppingCart />
-      <TotalCart />
-      <Footer className="footer" />
-    </div>
+<div className="main-container">
+  <div className="content">
+    <Header />
+    <ShoppingCart />
+  </div>
+  <div className="total-cart">
+    <TotalCart />
+  </div>
+  <Footer className="footer" />
+
+</div>
   ) : (
     <div className="main-container">
       <Header />
@@ -26,5 +28,4 @@ export const PageCart=()=>{
       <Footer className="footer"/>
     </div>
   );
-};  
-
+};

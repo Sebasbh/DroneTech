@@ -1,5 +1,20 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-favorites {
+  flex-grow: 1;
+}
+
+.footer-favorites {
+  flex-shrink: 0;
+}
+
+
 .emptyfavorites {
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 70vh; 
@@ -10,3 +25,42 @@
     color: #201E1F;
     font-weight: 300;
   }
+  .add-favorites2 {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #FF4000; /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto del botón */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .add-favorites2:hover {
+    background-color:#201E1F; /* Color de fondo del botón al pasar el cursor */
+    color: #f8f9fa;
+    transition: 0.5s ease-in-out;
+  }
+  .boton {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .add-favorites1 {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #FF4000;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .add-favorites1:hover {
+    background-color: #201E1F;
+    color: #f8f9fa;
+    transition: 0.5s ease-in-out;
+  }
+  

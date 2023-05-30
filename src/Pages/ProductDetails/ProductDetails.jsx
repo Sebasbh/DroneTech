@@ -4,7 +4,7 @@ import { Footer } from '../../components/Footer/Footer';
 import { useParams } from 'react-router-dom';
 import { getDron } from '../../Context/UserProvider';
 import "./ProductDetails.css"
-import { SettingsCellSharp } from '@mui/icons-material';
+//import { SettingsCellSharp } from '@mui/icons-material';
 
 
 
@@ -35,7 +35,7 @@ export function ProductDetails() {
               </>
             )}
           </div>
-          <Footer />
+          <Footer className='footer-detail'/>
         </>
       );
 }   

@@ -47,6 +47,14 @@
  
 }
 
+.favoritesicons{
+
+  margin-bottom: 25px;
+}
+.FavoriteIcon{
+  margin-bottom: 5px;
+  color: #FF4000;
+}
 .card-section{
   font-size: 25px;
 }
@@ -110,29 +118,6 @@
   display: block;
 }
 
-
-/* .banner {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.banner::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(23, 23, 23, 0.116); 
-} */
 
 /* BANNER */
 
@@ -199,23 +184,31 @@
 .favorite-drone {
   display: flex;
   align-items: center;
-  ;
 }
 
 
-.image-container {
-  flex-shrink: 0;
-  margin-right: 20px;
+
+
+.image-favorites{
+  height: 200px;
+  width: 200px;
+  
 }
 
 .drone-details {
-  flex-grow: 1;
-}
-.favorite-container {
-  padding: 30px;
-  min-height: 55vh;
+  width: 800px;
   display: flex;
   flex-direction: column;
+  
+}
+
+
+.favoritecontainer {
+  margin: auto;
+  align-items: center;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
 }
 
 ul {
@@ -225,6 +218,7 @@ ul {
 
 .footer {
   text-align: center;
+
 }
 
 .centered-heading {
@@ -247,4 +241,21 @@ ul {
   .cards-container {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.link-style {
+  color: inherit;
+  text-decoration: none;
+}
+
+.heart.active {
+  color: #FF4000;
+}
+
+.heart{
+  border: none;
+  outline: none;
+  background:transparent;
+  color: rgba(180, 175, 175, 0.806);
+  outline: none;
 }

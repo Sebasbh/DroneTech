@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import SearchIcon from '@mui/icons-material/Search';
@@ -27,7 +26,6 @@ export default function BasicModal() {
   const [filteredData, setFilteredData] = useState([]);
   const [highlightedItem, setHighlightedItem] = useState(null);
 
-  const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
   const handleMouseEnter = (event, index) => {
@@ -53,25 +51,21 @@ export default function BasicModal() {
   };
 
   useEffect(() => {
-    // Fetching data from the JSON file
-    fetch('../../data.json')
-    .then((response) => response.json())
-    .then((data) => {
-      setModalData(data);
-    })
-    .catch((error) => {
-      console.log('Error fetching data:', error);
-    });
-  
-  })
+    // Fetching data from the external API
+    fetch('http://localhost:3500/drones')
+      .then((response) => response.json())
+      .then((data) => {
+        console.log('API response:', data); // Verificar los datos recibidos en la consola
+        setModalData(data);
+      })
+      .catch((error) => {
+        console.error('Error fetching data:', error);
+      });
+  }, []);
+
   return (
     <div>
-      <Button
-        onClick={handleOpen}
-        style={{ background: 'FF400', padding: 0, border: 'none' }}
-      >
-        <SearchIcon style={{ color: '#FFF' }} />
-      </Button>
+      <SearchIcon onClick={() => setOpen(true)} style={{ padding: 0, background:'transparent'}} />
       <Modal
         open={open}
         onClose={handleClose}
@@ -85,13 +79,21 @@ export default function BasicModal() {
             <input
               type="text"
               placeholder="Nombre del dron"
-              style={{ marginLeft: '8px', width: '100%', padding: '8px', fontSize: '16px', color: 'black' }}
+              style={{
+                marginLeft: '8px',
+                width: '100%',
+                padding: '8px',
+                fontSize: '16px',
+                color: 'black',
+              }}
               value={searchText}
               onChange={handleSearchInputChange}
             />
           </div>
           {filteredData.length === 0 ? (
-            <Typography id="modal-modal-description" sx={{ mt: 2 }}>No matching results</Typography>
+            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+              No se encontraron resultados
+            </Typography>
           ) : null}
           {filteredData.map((item, index) => (
             <div
@@ -106,14 +108,19 @@ export default function BasicModal() {
               onMouseEnter={(event) => handleMouseEnter(event, index)}
               onMouseLeave={handleMouseLeave}
             >
-              <img src={item.image} alt={item.name} style={{ width: '50px', marginRight: '8px' }} />
+              <img
+                src={item.image}
+                alt={item.name}
+                style={{ width: '50px', marginRight: '8px' }}
+              />
               <div style={{ display: 'flex', alignItems: 'center' }}>
-                <Link to={`/product/${item.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-                  <Typography id="modal-modal-description">
-                    {item.name}
-                  </Typography>
+                <Link
+                  to={`/detail/${item.id}`}
+                  style={{ textDecoration: 'none', color: 'inherit' }}
+                >
+                  <Typography id="modal-modal-description">{item.name}</Typography>
                 </Link>
-                <Link to={`/ProductDetails/${item.id}`}>
+                <Link to={`/detail/${item.id}`}>
                   <IconButton size="small">
                     <ChevronRightIcon />
                   </IconButton>
@@ -126,5 +133,3 @@ export default function BasicModal() {
     </div>
   );
 }
-
-

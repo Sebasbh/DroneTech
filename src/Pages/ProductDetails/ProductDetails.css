@@ -1,6 +1,7 @@
 .container-details {
     display: flex;
     flex-direction: row;
+    height: 61%;
     justify-content: space-evenly;
 }
 
@@ -49,3 +50,7 @@
     color: white;
 }
 
+.footer-detail{
+    position: relative;
+    bottom: 0;
+}

@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# BIENVENIDO A DroneTech 😎🦾🛸
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+## DronTech es una Página Web de Venta de Drones
+Este proyecto es una página web diseñada para la venta de drones, con una variedad de funcionalidades que facilitan la experiencia de compra y brindan una interacción intuitiva para los usuarios. La página web es completamente responsive, lo que significa que se adapta a diferentes dispositivos, como teléfonos móviles, tablets y computadoras de escritorio.
 
-### `npm start`
+## Requerimientos del proyecto 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ 🛒**Carrito de Compra:** Los usuarios pueden seleccionar los drones que deseen comprar y agregarlos al carrito de compra. Pueden revisar los elementos en el carrito en cualquier momento, modificar las cantidades y eliminar productos según sea necesario.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+❤️**Lista de Favoritos: **Los usuarios pueden agregar drones a una lista de favoritos para guardar y acceder fácilmente a aquellos productos que les interesan. Esto les permite realizar un seguimiento de los drones que desean comprar en el futuro o comparar diferentes modelos.
 
-### `npm test`
+📋**Formulario de Contacto:** La página web incluye un formulario de contacto que permite a los usuarios comunicarse con el equipo de atención al cliente o hacer consultas sobre productos específicos. Los usuarios pueden completar el formulario y enviarlo directamente desde la página.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ **Filtro por Categoría:** Los usuarios pueden filtrar los drones por categoría, lo que les permite navegar y encontrar rápidamente los productos que se ajustan a sus necesidades y preferencias.
 
-### `npm run build`
+🔍**Buscador de Productos:**La página web cuenta con un buscador que permite a los usuarios realizar búsquedas de productos específicos. Además, si un producto no se encuentra disponible, se muestra un mensaje indicando al cliente que el producto no está disponible en ese momento.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+⚡**Página de Detalle de Producto:** En la que se proporciona información detallada, características técnicas, imágenes y precios para que los usuarios puedan ver toda la información de un Dron antes de comprarlo.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ 🚀**API JSON:** Se utiliza una API JSON para almacenar y gestionar los datos de todos los drones disponibles en la tienda. Esto garantiza que la información de los productos se mantenga actualizada y se pueda acceder a ella de manera eficiente.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+##Tecnologías Utilizadas
+El proyecto se desarrolló utilizando las siguientes tecnologías:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- React 
+- HTML5 
+- CSS
+- JavaScript: 
+- API JSON:  para almacenar y gestionar los datos de los drones.
+- Material UI como Framework y Bibliotecas adicionales.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Metodologias Agiles
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Trello
+- Figma 
+- GitHub 
+- Deploy
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Dependencias que usamos 
+- Axios
+- React-Router-Dom
+- react-router-dom@latest 
+- npm install -g json-server
+- Material UI
+- @Fuente Roboto
+- @fontsource/roboto   
+- @mui/icons-material  
+- @mui/material 
+- @emotion/react 
+- @emotion/styled
+- @mui/x-data-grid
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Para inicializar el proyecto 
+- json-server -p 3500 -w data.jso
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Equipo de Desarrolladores 
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Adriana Rodriguez 
+- Sebastian Benavides 
+- Daniel Zafra
+- Erika Linares 
+- Alejandro Mitjans
+- Lucia Mutua
