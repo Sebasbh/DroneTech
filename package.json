@@ -18,8 +18,10 @@
     "react-icons": "^4.8.0",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.11.2",
+    "react-slick": "^0.29.0",
     "redux": "^4.2.1",
     "script": "^0.1.4",
+    "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

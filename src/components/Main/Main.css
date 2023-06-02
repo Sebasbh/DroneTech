@@ -2,19 +2,17 @@
 
 /* FILTRO BOTONES */
 
-.filters{
+.filters {
   margin-top: 40px;
   display: flex;
   justify-content: center;
-  text-align:left;
+  text-align: left;
   margin-left: 20px;
-  
-  
 }
 
 .filters button {
   font-family: 'Roboto';
-  background-color: #201E1F;
+  background-color: #201e1f;
   border: none;
   border-radius: 5px;
   color: white;
@@ -24,15 +22,17 @@
   font-size: 14px;
   margin-right: 10px;
   cursor: pointer;
-
 }
 
-.filters button:hover{
-  background-color:#FF4000; /* Color de fondo del botón al pasar el cursor */
+.filters button:hover {
+  background-color: #ff4000; /* Color de fondo del botón al pasar el cursor */
   color: #f8f9fa;
   transition: 0.5s ease-in-out;
 }
 
+.filters button.active {
+  background-color: #ff4000;
+}
 
 /* REJILLA PRODUCTOS */
 
@@ -57,6 +57,7 @@
 }
 .card-section{
   font-size: 25px;
+  margin-left: 105px;
 }
 
 .cards-container {

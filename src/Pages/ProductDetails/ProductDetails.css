@@ -10,10 +10,13 @@
     justify-content: center;
     text-align: center;
     margin-left: 200px;
+    align-items: center;
+    margin:auto;
 }
 
 .container-name img {
     width: 400px;
+  
 }
 
 .container-name h3 {

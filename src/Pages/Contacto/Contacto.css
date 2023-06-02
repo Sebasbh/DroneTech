@@ -4,18 +4,21 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color:rgb(241, 235, 235);
-    gap: 100px;
-   
+    gap: 100px;  
   }
   
   .infoSection {
     margin-bottom: 20px;
     font-size: 1.5rem;
-    font-weight: 300px;
     font-family: "Roboto";
-    color: #201E1F;
-    
+    color: #201E1F;  
+  }
+
+  .infoSection h2{
+    font-weight: 100;
+    align-items: center;
+    text-align: center;
+    margin-left: 25px;
   }
   
   .formSection {
@@ -38,11 +41,17 @@
     display: block;
     margin-bottom: 5px;
   }
+/* 
   .address{
     padding: 20px;
-    background-color: #FF4000;
-    border-radius: 10px;
-    
+    background-color: #ff4000;
+    border-radius: 50%;
+  } */
+
+  .contact-image{
+    align-items: center;
+    width: 400px;
+    height: 400px;
   }
 
   .infoAddress{
@@ -58,7 +67,6 @@
     width: 500px;
     padding: 20px;
     font-size: 16px;
-    border-radius: 5px;
   }
   
   .btnSubmit {
@@ -74,13 +82,13 @@
     font-size: 20px;
     font-weight:600;
     font-family: "Roboto";
-    color: aliceblue;
+    color: white;
     padding: 20px;
-    border-radius: 5px;
+    border: none;
   }
 
   .btnSubmit:hover{
-    color: #201E1F;
+    background-color: #201E1F;
     transition: ease-in-out 0.5s;
     cursor: pointer;
   }

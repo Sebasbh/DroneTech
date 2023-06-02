@@ -12,7 +12,6 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { styled } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
 
-
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
   return <IconButton {...other} />;
@@ -54,13 +53,17 @@ export const Cards = () => {
   setCartQuantity(cart.length);
   setHeartQuantity(heart.length);
 
+  const isFilterActive = (filterOption) => {
+    return filter === filterOption;
+  };
+
   return (
     <div className='main-cards-container'>
       <div className='filters'>
-        <button onClick={() => setFilter(null)}>Todos</button>
-        <button onClick={() => setFilter("Recreativo")}>Recreativo</button>
-        <button onClick={() => setFilter("Semiprofesional")}>Semiprofesional</button>
-        <button onClick={() => setFilter("Profesional")}>Profesional</button>
+        <button onClick={() => setFilter(null)} className={isFilterActive(null) ? "active" : ""}>Todos</button>
+        <button onClick={() => setFilter("Recreativo")} className={isFilterActive("Recreativo") ? "active" : ""}>Recreativo</button>
+        <button onClick={() => setFilter("Semiprofesional")} className={isFilterActive("Semiprofesional") ? "active" : ""}>Semiprofesional</button>
+        <button onClick={() => setFilter("Profesional")} className={isFilterActive("Profesional") ? "active" : ""}>Profesional</button>
       </div>
       <div className='cards-title-container'>
         <h3 className="card-section">Nuestros productos :</h3>
@@ -116,9 +119,9 @@ export const Cards = () => {
 
               <CardActions disableSpacing>
                 <IconButton aria-label="add to favorites" onClick={() => handleFavoriteClick(dron.id)}>
-                    <button className='heart'   onClick={() => AddFavorites(dron)}>
+                  <button className='heart' onClick={() => AddFavorites(dron)}>
                     <FavoriteIcon className={cardStates[dron.id]?.isFavorite ? 'heart active' : 'heart'} />
-                    </button>
+                  </button>
                 </IconButton>
                 <ExpandMore
                   expand={cardStates[dron.id]?.expanded}
@@ -144,3 +147,6 @@ export const Cards = () => {
     </div>
   );
 };
+
+
+

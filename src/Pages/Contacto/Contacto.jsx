@@ -45,7 +45,7 @@ export function Contacto() {
         <h2>CONTÁCTANOS</h2> <br/ >
         <Grid className='address' item xs={12} sm={6} md={3}>
               <Typography variant="body2" align="center">
-                <p className='infoAddress'>Calle/Factoria N5-Madrid <br />
+                {/* <p className='infoAddress'>Calle/Factoria N5-Madrid <br />
                 mail:info@instadrone.com <br />
                 tel:912287734-912287734 
                     </p> <br /> 
@@ -55,7 +55,8 @@ export function Contacto() {
                     <InstagramIcon className="social-icon" fontSize='large' />
                     <LinkedInIcon className="social-icon" fontSize='large'/>
                     <YouTubeIcon className="social-icon" fontSize='large'/>
-                </div>
+                </div> */}
+                <img src="/assets/Fotos drones/AERO-1X.png" alt="Foto" className="contact-image" />
 
               </Typography>
             

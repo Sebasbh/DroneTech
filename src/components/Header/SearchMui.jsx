@@ -90,8 +90,8 @@ export function SearchMui() {
               alignItems: 'center',
             }}
           >
-            <img src="/assets/Fotos/icon_dron.png" alt="Logo" style={{ width: '40px', height: 'auto', marginRight: '10px', color: '#white'}} />
-          <Link to="/"><span className='nameApp' style={{ fontFamily: 'Roboto', fontSize: '24px', fontWeight: '300' }}>DroneTech</span></Link>
+            <img className='imagen-logo' src="/assets/Fotos/icon_dron.png" alt="Logo" style={{ width: '40px', height: 'auto', marginRight: '10px'}} />
+          <Link to="/"><span className='nameApp' style={{ fontFamily: 'Roboto', fontSize: '24px', fontWeight: '200' }}>DroneTech</span></Link>
       
           </Typography>  
 
